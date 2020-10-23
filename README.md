@@ -1,31 +1,34 @@
-# Description
-The idea was to build a simple and affordable device to water a plant, using sensors to check humidity and light exposure. In addition to the well-known hardware implementation for this purpose, a software control panel was developed in order to inspect the status measured by the sensors, as well as to set the values which are considered acceptable in terms of light and humidity levels. 
+# Descricpión
+La idea es poder regar una planta de forma automatizada utilizando sensores que verifiquen las condiciones adecuadas para el regado: poca humedad y poca luz. Para eso se utiliza un fotorresistor y un sensor de humedad, y adicionalmente un software para el monitoreo de los valores registrados, asi como la configuración de los valores precisos para considerar los valores aceptables mínimos de humedad y luz.
 
-# Components
+# Componentes
 - Arduino ESP8266 (Lolin Nodemcu v3)
-- GL5537 photoresistor
-- HL-69 humidity sensor
-- XJD-33 electrovalve
-- SRV-05 relay
-- 4051 multiplexor (CD4051BD) (used to take advantage of the only analogic pin available on the board) 
+- Fotoresistor GL5537
+- Sensor de humedad HL-69
+- Electroválvula XJD-33
+- Relé SRV-05
+- Multiplexor 4051 (CD4051BD) (para aprovechar el úncio pin analógico) 
 
-# Circuit
+# Circuito
+Se muestra el circuito electrónico propiamente dicho:
 ![alt text](media/circuito1.png)
 
+Considerando el pinout de la placa Arduino utilizada:
 ![alt text](media/pinout.jpg)
 
+el esquema de la unión de los componentes es el siguiente:
 ![alt text](media/placa2.png)
 ![alt text](media/placa1.png)
 
-# Preview
-Software control panel:
+# Previsualización
+El menu del software es el siguiente:
 ![alt text](media/menu.png)
 
-Live visualization of light and humidity levels:
+una de las características salientes es la visualización en vivo de los valores de luz y humedad captados por los sensores:
 ![alt text](media/arduino1.gif)
 
-Reducing the light exposure, the electrovalve is activated, letting the water flow.
+puede verse como disminuyendo el nivel de luz, se activa la electroválvula que permite el regado de la planta
 ![alt text](media/arduino2.gif)
 
-# How do I run it?
-The control panel can be ran with Python 3, once the device is connected by USB. The following python modules should be installed: pyserial, numpy and tabulate.
+# ¿Qué se necesita para correrlo?
+El software requiere del circuito conectado a la computadora, junto con python 3 y los módulos: pyserial, numpy y tabulate. 
