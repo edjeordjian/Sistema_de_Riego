@@ -1,34 +1,33 @@
-# Descricpión
-La idea es poder regar una planta de forma automatizada utilizando sensores que verifiquen las condiciones adecuadas para el regado: poca humedad y poca luz. Para eso se utiliza un fotorresistor y un sensor de humedad, y adicionalmente un software para el monitoreo de los valores registrados, asi como la configuración de los valores precisos para considerar los valores aceptables mínimos de humedad y luz.
+# Description
+The idea was to build a simple and affordable device to water a plant, using sensors to check humidity and light exposure. In addition to the well-known hardware implementation for this purpose, a software control panel was developed in order to inspect the status measured by the sensors, and well as to set the values which are considered acceptable in terms of light and humidity levels. 
 
-# Componentes
+# Components
 - Arduino ESP8266 (Lolin Nodemcu v3)
-- Fotoresistor GL5537
-- Sensor de humedad HL-69
-- Electroválvula XJD-33
-- Relé SRV-05
-- Multiplexor 4051 (CD4051BD) (para aprovechar el úncio pin analógico) 
+- GL5537 photoresistor
+- HL-69 humidity sensor
+- XJD-33 electrovalve
+- SRV-05 relay
+- 4051 multiplexor (CD4051BD) (used to take advantage of the only analogic pin available on the board) 
 
-# Circuito
-Se muestra el circuito electrónico propiamente dicho:
+# Circuit
 ![alt text](media/circuito1.png)
 
-Considerando el pinout de la placa Arduino utilizada:
+Considering the board's pinout:
 ![alt text](media/pinout.jpg)
 
-el esquema de la unión de los componentes es el siguiente:
+the joins are sketched as follows:
 ![alt text](media/placa2.png)
 ![alt text](media/placa1.png)
 
-# Previsualización
-El menu del software es el siguiente:
+# Preview
+Software control panel:
 ![alt text](media/menu.png)
 
-una de las características salientes es la visualización en vivo de los valores de luz y humedad captados por los sensores:
+Live visualization of light and humidity levels:
 ![alt text](media/arduino1.gif)
 
-puede verse como disminuyendo el nivel de luz, se activa la electroválvula que permite el regado de la planta
+Reducing the light exposure, the electrovalve is activated, letting the water flow.
 ![alt text](media/arduino2.gif)
 
-# ¿Qué se necesita para correrlo?
-El software requiere del circuito conectado a la computadora, junto con python 3 y los módulos: pyserial, numpy y tabulate. 
+# How do I run it?
+The control panel can be ran with Python 3, once the device is connected by USB. The following python modules should be installed: pyserial, numpy and tabulate.
