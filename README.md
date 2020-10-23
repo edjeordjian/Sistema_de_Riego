@@ -10,13 +10,9 @@ La idea es poder regar una planta de forma automatizada utilizando sensores que 
 - Multiplexor 4051 (CD4051BD) (para aprovechar el úncio pin analógico) 
 
 # Circuito
-Se muestra el circuito electrónico propiamente dicho:
 ![alt text](media/circuito1.png)
 
-Considerando el pinout de la placa Arduino utilizada:
 ![alt text](media/pinout.jpg)
-
-el esquema de la unión de los componentes es el siguiente:
 ![alt text](media/placa2.png)
 ![alt text](media/placa1.png)
 
