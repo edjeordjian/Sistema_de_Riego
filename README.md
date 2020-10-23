@@ -1,5 +1,5 @@
 # Description
-The idea was to build a simple and affordable device to water a plant, using sensors to check humidity and light exposure. In addition to the well-known hardware implementation for this purpose, a software control panel was developed in order to inspect the status measured by the sensors, and well as to set the values which are considered acceptable in terms of light and humidity levels. 
+The idea was to build a simple and affordable device to water a plant, using sensors to check humidity and light exposure. In addition to the well-known hardware implementation for this purpose, a software control panel was developed in order to inspect the status measured by the sensors, as well as to set the values which are considered acceptable in terms of light and humidity levels. 
 
 # Components
 - Arduino ESP8266 (Lolin Nodemcu v3)
