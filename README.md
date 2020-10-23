@@ -12,10 +12,8 @@ The idea was to build a simple and affordable device to water a plant, using sen
 # Circuit
 ![alt text](media/circuito1.png)
 
-Considering the board's pinout:
 ![alt text](media/pinout.jpg)
 
-the joins are sketched as follows:
 ![alt text](media/placa2.png)
 ![alt text](media/placa1.png)
 
