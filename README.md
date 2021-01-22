@@ -28,3 +28,8 @@ Al disminuir el nivel de luz, se activa la electroválvula que permite el regado
 
 # ¿Qué se necesita para ejecutar el software?
 El software requiere del circuito conectado a la computadora, junto con python 3 y los módulos: pyserial, numpy y tabulate. 
+
+## Hecho con
+komod0   
+ManuelBilbao   
+ 
